@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FibNumb"
+             x:Class="FibNumb.MainPage" x:Name="MP" NavigationPage.HasBackButton="False" BackgroundColor="#323232">
+    <AbsoluteLayout x:Name="Layot" IsVisible="True" IsEnabled="True" HorizontalOptions="FillAndExpand">
+        <Label Text="Level:" SemanticProperties.HeadingLevel="Level1" AbsoluteLayout.LayoutBounds="10,0" TextColor="#FFFFFF" FontSize="Medium" />
+<Slider ValueChanged="OnSliderValueChanged" x:Name="LvlSel" HorizontalOptions="FillAndExpand" IsEnabled="True" IsVisible="True" Maximum="10" VerticalOptions="Center" BackgroundColor="#EEDFDF" AbsoluteLayout.LayoutBounds="80,0"/>
+<Label Text="" SemanticProperties.HeadingLevel="Level1" AbsoluteLayout.LayoutBounds="285,5" x:Name="Level" TextColor="#F3F2F2"/>
+<Label Text="Find number:" SemanticProperties.HeadingLevel="Level1" AbsoluteLayout.LayoutBounds="350,0" FontSize="Medium" TextColor="#EED4D4" />
+        <Label x:Name="Challenge" SemanticProperties.HeadingLevel="Level1" AbsoluteLayout.LayoutBounds="500,0" TextColor="#F8EDED" FontSize="Medium" />
+        <Label Text="SCORE:" SemanticProperties.HeadingLevel="Level1" AbsoluteLayout.LayoutBounds="600,0" FontSize="Medium" TextColor="#F7F7F7" />
+<Label x:Name="Score" SemanticProperties.HeadingLevel="Level1" AbsoluteLayout.LayoutBounds="680,0" FontSize="Medium" TextColor="#F7F3F3" TextTransform="Uppercase" Text="0" />
+<Label Text="LIVES:" SemanticProperties.HeadingLevel="Level1" FontSize="Medium" AbsoluteLayout.LayoutBounds="1000,0" TextColor="#F8F3F3" />
+<Label x:Name="Lives" Text="3" SemanticProperties.HeadingLevel="Level1" AbsoluteLayout.LayoutBounds="1100,0" FontSize="Medium" TextColor="#F3F2F2" />
+
+        <Grid x:Name="BtnGrid" RowDefinitions="Auto,Auto,*" ColumnDefinitions="*,*" BackgroundColor="#B8BDFD" IsEnabled="True" IsVisible="True" ColumnSpacing="1" HorizontalOptions="Center" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="50,50"/>
+    </AbsoluteLayout>
+
+</ContentPage>
