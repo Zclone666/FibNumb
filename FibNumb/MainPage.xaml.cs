@@ -128,7 +128,7 @@ public partial class MainPage : ContentPage
             BtnArrX[i].Text = Main.FibNumbs[(int)(Math.Floor((double)i/Main.NmbOfSquares)+(i%Main.NmbOfSquares*2))].ToString();// i.ToString();
 			BtnArrX[i].WidthRequest = Main.SizeOfSquare * Main.AspectRatioWidth;
 			BtnArrX[i].HeightRequest = Main.SizeOfSquare * Main.AspectRatioHeight;
-			BtnArrX[i].TextColor = (Main.Map[i])?Color.FromArgb("#DFD8F7"):Color.FromArgb("#FF6B5814");
+			BtnArrX[i].TextColor = (!Main.Map[i])?BtnArrX[i].BackgroundColor:Color.FromArgb("#FF6B5814");
 			BtnArrX[i].Pressed += OnBtnClick;
 
         }
